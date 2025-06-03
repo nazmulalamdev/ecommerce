@@ -1,9 +1,9 @@
 import React from "react";
 
-const Container = ({ clildren }) => {
+const Container = ({ children }) => {
   return (
     <>
-      <div>Container</div>
+      <div className="max-w-[1240px] mx-auto">{children}</div>
     </>
   );
 };

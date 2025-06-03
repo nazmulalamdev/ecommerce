@@ -1,9 +1,12 @@
 import React from "react";
+import Banner from "../components/Banner";
+import Faq from "../components/Faq";
 
 const HomePage = () => {
   return (
     <>
-      <div>HomePage</div>
+      <Banner />
+      <Faq />
     </>
   );
 };
