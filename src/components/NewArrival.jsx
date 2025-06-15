@@ -1,15 +1,24 @@
 import React from "react";
 import Container from "./commonLayout/Container";
 import ProductLayout from "./commonLayout/ProductLayout";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const NewArrival = () => {
   return (
     <Container>
       <div className="pt-[106px]">
-        <div>
+        <div className="flex items-center justify-between">
           <h3 className="font-['Prompt'] font-bold text-[47px]">
             New <span className="text-[#5E1EE5]">arrival</span> for you
           </h3>
+          <ul className="flex gap-6">
+            <li className="w-[55px] h-[55px] rounded-full flex items-center justify-center border hover:border-0 hover:bg-[#AFE638] cursor-pointer">
+              <FaArrowLeft size={24} />
+            </li>
+            <li className="w-[55px] h-[55px] rounded-full flex items-center justify-center border hover:border-0 hover:bg-[#AFE638] cursor-pointer">
+              <FaArrowRight size={24} />
+            </li>
+          </ul>
         </div>
 
         <div className="flex justify-between mt-[46px]">

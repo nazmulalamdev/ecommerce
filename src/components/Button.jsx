@@ -1,4 +1,5 @@
 import React from "react";
+import { IoMdCart } from "react-icons/io";
 
 const Button = ({
   text,
@@ -22,7 +23,10 @@ const Button = ({
         cursor: "pointer",
       }}
     >
-      {text}
+      <span className="flex items-center gap-2.5">
+        <IoMdCart />
+        {text}
+      </span>
     </button>
   );
 };
